@@ -25,7 +25,6 @@ html {
 }
 
 body {
-  // width: 100vw;
   font-family: $font-family;
   min-height: 100vh;
   overflow: hidden;
@@ -74,8 +73,10 @@ body {
       width: 27vw;
       line-height: 2.8rem;
     }
-    label {
+    .email-wrapper {
       position: relative;
+      width: min-content;
+      margin-top: 2rem;
     }
     small {
       display: block;
@@ -102,7 +103,6 @@ body {
       height: 6vh;
       border-radius: 3rem;
       border: 0.1rem solid $desaturated-red;
-      margin-top: 2rem;
       cursor: pointer;
       outline: 0;
       display: inline-block;
@@ -128,14 +128,14 @@ body {
       box-shadow: 0rem 1rem 2rem hsl(0, 36%, 70%);
       position: absolute;
       border-radius: 3rem;
-      margin-top: 2rem;
       width: 6.5vw;
       height: 6vh;
       background: $linear-gradient-2;
       border: 1px solid $desaturated-red;
       cursor: pointer;
       outline: none;
-      right: 0;
+      top: 0;
+      right: 0.1rem;
       transition: width 0.3s ease-in-out;
       &:hover {
         width: 7vw;
@@ -170,14 +170,12 @@ body {
         padding-top: 30%;
       }
       form {
-        label {
-          input {
-            width: 25vw;
-            height: 4vh;
-          }
-          button {
-            height: 4vh;
-          }
+        input {
+          width: 25vw;
+          height: 4vh;
+        }
+        button {
+          height: 4vh;
         }
       }
     }
@@ -199,13 +197,11 @@ body {
         font-size: 1.5rem;
       }
       form {
-        label {
-          input {
-            width: 27vw;
-          }
-          ::placeholder {
-            font-size: 1.5rem;
-          }
+        input {
+          width: 27vw;
+        }
+        ::placeholder {
+          font-size: 1.5rem;
         }
       }
     }
@@ -236,18 +232,16 @@ body {
         padding: 10% 0 10%;
       }
       form {
-        label {
-          input {
-            width: 27vw;
-            height: 3rem;
-            padding-left: 1.5rem;
-          }
-          ::placeholder {
-            font-size: 1.2rem;
-          }
-          button {
-            height: 3rem;
-          }
+        input {
+          width: 27vw;
+          height: 3rem;
+          padding-left: 1.5rem;
+        }
+        ::placeholder {
+          font-size: 1.2rem;
+        }
+        button {
+          height: 3rem;
         }
       }
     }
@@ -317,21 +311,19 @@ body {
         padding: 5vh 0 0.8vh;
       }
       form {
-        label {
-          input {
-            width: 28rem;
-            height: 4rem;
-            padding-left: 2rem;
-          }
-          ::placeholder {
-            font-size: 1.5rem;
-          }
-          button {
-            height: 4rem;
-            width: 5rem;
-            &:hover {
-              width: 7rem;
-            }
+        input {
+          width: 28rem;
+          height: 4rem;
+          padding-left: 2rem;
+        }
+        ::placeholder {
+          font-size: 1.5rem;
+        }
+        button {
+          height: 4rem;
+          width: 5rem;
+          &:hover {
+            width: 7rem;
           }
         }
       }
