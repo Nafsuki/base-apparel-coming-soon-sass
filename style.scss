@@ -36,12 +36,14 @@ body {
   align-items: center;
   color: $desaturated-red;
 }
+
+// Contents
 .logo-mobile {
   display: none;
 }
 .container {
-  max-width: 144rem;
-  max-height: 90rem;
+  width: 100%;
+  height: min-content;
   display: flex;
   background: $linear-gradient-1;
   .img-mobile {
@@ -152,17 +154,8 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 110rem;
-    max-height: 70rem;
-  }
-}
-
 @media (max-width: 1090px) {
   .container {
-    max-width: 100rem;
-    max-height: 65rem;
     .main {
       padding: 5vh 10vw;
       h1 {
@@ -184,8 +177,6 @@ body {
 
 @media (max-width: 940px) {
   .container {
-    max-width: 800rem;
-    max-height: 63rem;
     .main {
       width: 60vw;
       padding: 6vh 10vw;
